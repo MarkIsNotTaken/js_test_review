@@ -7,9 +7,11 @@ var maiden = "Morgana";
 var monster = "Loch Ness";
 
 var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"];
-var wizard = "Merlin";
-var weapon = weaponChest[0];
-var power = 50;
+var hero = [
+	wizard = "Merlin",
+	power = 50,
+	weapon = weaponChest[0]
+];
 
 function swordInTheStone(worthy){
 	if(worthy == "Arthur"){
