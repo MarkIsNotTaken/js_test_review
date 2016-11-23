@@ -21,7 +21,7 @@ function swordInTheStone(worthy){
 	}
 }
 
-swordInTheStone("Gawain");
+swordInTheStone(knight);
 
 function trueLove(king, queen){	
 	if(queen == "Quinevere" && king == "Arthur"){
