@@ -1,17 +1,17 @@
-//Javascript Test Review
-//Mark Demesillo 
-//11.23
+/*Javascript Test Review
+Mark Demesillo 
+*/
 
 var knight = "Gawain";
 var maiden = "Morgana";
 var monster = "Bob Marley";
 
 var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"];
-var hero = [
-	wizard = "Merlin",
-	power = 50,
-	weapon = weaponChest[0]
-];
+var hero = {
+	wizard : "Merlin",
+	power : 50,
+	weapon : weaponChest[0]
+};
 
 function swordInTheStone(worthy){
 	if(worthy == "Arthur"){
@@ -24,7 +24,7 @@ function swordInTheStone(worthy){
 swordInTheStone(knight);
 
 function trueLove(king, queen){	
-	if(queen == "Quinevere" && king == "Arthur"){
+	if(queen == "Guinevere" && king == "Arthur"){
 		console.log("On this day, our " + king + " and  " + queen + " shall rule happily ever after.")
 	}else{
 		console.log("We must keep searching, for true love must reign over Camelot.")
@@ -34,13 +34,14 @@ function trueLove(king, queen){
 trueLove(knight, maiden);
 
 function epicBattle(wizard, enemy, power){
-	if(power <= 15){
-		console.log("Our " + wizard + " has fallen.")
-	}else if(power >= 16 && power >= 40){
-		console.log(wizard + " has almost slain " + enemy + ".")
+	if(hero.power <= 15){
+		console.log("Our " + hero.wizard + " has fallen.")
+	}else if(hero.power >= 16 && hero.power >= 40){
+		console.log(hero.wizard + " has almost slain " + enemy + ".")
 	}else{
-		console.log("Our " + wizard + " has slain the " + enemy + ".")
+		console.log("Our " + hero.wizard + " has slain the " + enemy + ".")
+		console.log("You really do deserve the eyes of your father, " + hero.wizard)
 	}
 }
 
-epicBattle(wizard, monster, power);
+epicBattle(hero.wizard, monster, hero.power);
