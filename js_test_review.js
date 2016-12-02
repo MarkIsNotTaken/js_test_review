@@ -4,7 +4,7 @@
 
 var knight = "Gawain";
 var maiden = "Morgana";
-var monster = "Loch Ness";
+var monster = "Bob Marley";
 
 var weaponChest = ["Mace", "Sorcerer's Stone", "Excalibur"];
 var hero = [
