@@ -36,7 +36,7 @@ trueLove(knight, maiden);
 function epicBattle(wizard, enemy, power){
 	if(hero.power <= 15){
 		console.log("Our " + hero.wizard + " has fallen.")
-	}else if(hero.power >= 16 && hero.power >= 40){
+	}else if(hero.power >= 16 || hero.power >= 40){
 		console.log(hero.wizard + " has almost slain " + enemy + ".")
 	}else{
 		console.log("Our " + hero.wizard + " has slain the " + enemy + ".")
